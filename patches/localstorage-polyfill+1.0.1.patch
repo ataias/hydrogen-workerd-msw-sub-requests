@@ -1,0 +1,13 @@
+diff --git a/node_modules/localstorage-polyfill/localStorage.js b/node_modules/localstorage-polyfill/localStorage.js
+index f66c9d9..549e5d3 100644
+--- a/node_modules/localstorage-polyfill/localStorage.js
++++ b/node_modules/localstorage-polyfill/localStorage.js
+@@ -36,7 +36,7 @@ class LocalStorage {
+ }
+ const instance = new LocalStorage()
+ 
+-global.localStorage = new Proxy(instance, {
++globalThis.localStorage = new Proxy(instance, {
+   set: function (obj, prop, value) {
+     if (LocalStorage.prototype.hasOwnProperty(prop)) {
+       instance[prop] = value

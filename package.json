@@ -10,7 +10,8 @@
     "preview": "shopify hydrogen preview --build",
     "lint": "eslint --no-error-on-unmatched-pattern --ext .js,.ts,.jsx,.tsx .",
     "typecheck": "tsc --noEmit",
-    "codegen": "shopify hydrogen codegen"
+    "codegen": "shopify hydrogen codegen",
+    "postinstall": "patch-package"
   },
   "prettier": "@shopify/prettier-config",
   "dependencies": {
@@ -21,6 +22,9 @@
     "graphql": "^16.6.0",
     "graphql-tag": "^2.12.6",
     "isbot": "^3.8.0",
+    "localstorage-polyfill": "^1.0.1",
+    "msw": "^2.7.0",
+    "patch-package": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -43,6 +47,7 @@
     "prettier": "^2.8.4",
     "typescript": "^5.2.2",
     "vite": "^5.1.0",
+    "vite-plugin-node-polyfills": "^0.23.0",
     "vite-tsconfig-paths": "^4.3.1"
   },
   "engines": {
