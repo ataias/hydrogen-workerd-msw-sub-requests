@@ -1,22 +1,6 @@
 # Hydrogen template: Skeleton
 
-Hydrogen is Shopify’s stack for headless commerce. Hydrogen is designed to dovetail with [Remix](https://remix.run/), Shopify’s full stack web framework. This template contains a **minimal setup** of components, queries and tooling to get started with Hydrogen.
-
-[Check out Hydrogen docs](https://shopify.dev/custom-storefronts/hydrogen)
-[Get familiar with Remix](https://remix.run/docs/en/v1)
-
-## What's included
-
-- Remix
-- Hydrogen
-- Oxygen
-- Vite
-- Shopify CLI
-- ESLint
-- Prettier
-- GraphQL generator
-- TypeScript and JavaScript flavors
-- Minimal setup of components and routes
+This repo tries to use MSW to intercept sub-requests, but it does not work. It tries to do the same as done in <https://github.com/rmiller61/hydrogen-oxygen-msw>, but using more recent package versions. It was also mentioned in <https://github.com/Shopify/hydrogen/issues/1604#issuecomment-2610481592> .
 
 ## Getting started
 
